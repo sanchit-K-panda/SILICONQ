@@ -2,12 +2,19 @@ import React from 'react';
 import { useSimulationStore } from '../../store/simulationStore.js';
 
 const PRESETS = [
-  { label: 'Si at 300K Intrinsic',       temp: 300, type: 'intrinsic', nd: 1e16, na: 0 },
-  { label: 'Si at 300K N-type 1e16',     temp: 300, type: 'n-type',    nd: 1e16, na: 0 },
-  { label: 'Si at 300K P-type 1e16',     temp: 300, type: 'p-type',    nd: 0,    na: 1e16 },
-  { label: 'High-temp intrinsic 500K',   temp: 500, type: 'intrinsic', nd: 1e16, na: 0 },
-  { label: 'Freeze-out demo 100K',       temp: 100, type: 'n-type',    nd: 1e16, na: 0 },
-  { label: 'Degenerate N-type 1e19',     temp: 300, type: 'n-type',    nd: 1e19, na: 0 },
+  { label: 'Apple A17 Pro (3nm TSMC)',            temp: 358, type: 'n-type',    nd: 5e18, na: 0 },
+  { label: 'Snapdragon 8 Gen 3 (4nm Samsung)',    temp: 345, type: 'n-type',    nd: 2e18, na: 0 },
+  { label: 'Intel Core i9-14900K (Intel 7)',       temp: 373, type: 'n-type',    nd: 1e17, na: 0 },
+  { label: 'AMD Ryzen 9 7950X (5nm TSMC)',         temp: 363, type: 'p-type',    nd: 0,    na: 3e18 },
+  { label: 'NVIDIA H100 (4nm TSMC)',               temp: 353, type: 'n-type',    nd: 8e18, na: 0 },
+  { label: 'Qualcomm X75 5G Modem',                temp: 338, type: 'n-type',    nd: 1e17, na: 0 },
+  { label: 'Samsung Exynos 2400 (4nm)',            temp: 348, type: 'p-type',    nd: 0,    na: 4e18 },
+  { label: 'MediaTek Dimensity 9300 (4nm)',        temp: 340, type: 'n-type',    nd: 2e18, na: 0 },
+  { label: 'Intel Gaudi 3 AI Accelerator',         temp: 368, type: 'n-type',    nd: 6e18, na: 0 },
+  { label: 'Google Tensor G4 (4nm Samsung)',       temp: 350, type: 'p-type',    nd: 0,    na: 2e18 },
+  { label: 'AMD MI300X (5nm TSMC)',                temp: 358, type: 'n-type',    nd: 7e18, na: 0 },
+  { label: 'Intrinsic Si — Room Temp',             temp: 300, type: 'intrinsic', nd: 0,    na: 0 },
+  { label: 'Cryogenic CMOS (Quantum QPU)',         temp: 100, type: 'n-type',    nd: 1e16, na: 0 },
 ];
 
 export function PresetSelector() {
