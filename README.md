@@ -2,7 +2,7 @@
 
 **SiliconQ** is a premium, modern web-based semiconductor physics simulator designed for researchers, students, and engineers. It provides an interactive, real-time visualization dashboard to explore the quantum statistical mechanics of silicon under varying temperatures and doping profiles.
 
-**Created by: Yagya Sipani**
+**Created by: Yagya Sipani **
 
 ---
 
